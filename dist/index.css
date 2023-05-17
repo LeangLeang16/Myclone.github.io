@@ -1,0 +1,43 @@
+li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 12rem;
+    height: 2.5rem;
+    font-size: small;
+    color: white;
+    position: relative;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+:root{
+    --red : #ed1c24;
+    --gray : #454343;
+    --white : #ffff;
+    --buttoncolor:#b0acac93;
+}
+nav .hover::before{
+    content: "";
+    height: 0.25rem;
+    width: 0;
+    bottom: 0;
+    background: var(--red);
+    position: absolute;
+    transition-duration: 0.5s;
+
+}
+nav .hover::after{
+    content: "";
+    height: 0.25rem;
+    width: 0;
+    bottom: 0;
+    background: var(--gray);
+    position: absolute;
+    transition-duration: 0.5s;    
+}
+h1,p{
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+button{
+    font-family: 'Kdam Thmor Pro', sans-serif; 
+}
+
