@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="search1.css">
+    <link rel="stylesheet" href="output.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Delicious+Handrawn&family=Noto+Serif+Khmer:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="text-center">
+        <h1 class="text-blue-600">Hea Leang Tech</h1>
+        <h2>Location : Tropeang Ompel, Tropeang kong, Somrong Torng, Kampong Spue</h2>
+        <h4>Tell : 010 436 679 (Telegram)</h4>
+    </div>
+    <div class="wrapper">
+        <div id="search-container">
+            <input 
+            type="search" 
+            id="search-input" 
+            placeholder="Search product name here..."
+            \>
+            <button id="search">Search</button>
+        </div>
+        <div id="buttons">
+            <button class="button-value" onclick="filterProduct('all')">All</button>
+            <button class="button-value"
+            onclick="filterProduct('ASUS')">ASUS</button>
+            <button class="button-value"
+            onclick="filterProduct('MSI')">MSI</button>
+            <button class="button-value"
+            onclick="filterProduct('ACER')">ACER</button>
+            <button class="button-value"
+            onclick="filterProduct('LENOVO')">LENOVO</button>
+            <button class="button-value"
+            onclick="filterProduct('MACOS')">MACOS</button>
+        </div>
+        <div id="products"></div>
+    </div>
+    <script src="search1.js"></script>
+</body>
+</html>
